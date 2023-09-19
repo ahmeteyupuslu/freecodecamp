@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <title>Sport Club Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Sport Club Application Form</h1>
+        <p id="description">Please fill form with true information.</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <div>
+                    <label for="name" id="name-label">Name</>
+                        <input id="name" required type="text" placeholder="Enter your name" name="name"
+                            class="form-control">
+                        <br>
+                        <br>
+                        <label for="email" id="email-label">E-mail</label>
+                        <input id="email" type="email" class="form-control" required placeholder="Enter your email">
+                        <br>
+                        <br>
+                        <label for="number" id="number-label">Age</label>
+                        <input id="number" placeholder="Enter your age" type="number" placeholder="Enter your age"
+                            min="18" max="120" required>
+                        <br>
+                        <br>
+                </div>
+
+                <div>
+                    <label for="dropdown" id="dropdown-label">Which sport do you want to do?</label>
+                    <div>
+                        <select id="dropdown" name="sport-pref" required>
+                            <option disabled selected value>Select</option>
+                            <option value="Fitness">Fitness</option>
+                            <option value="Tennis">Tennis</option>
+                            <option value="Football">Football</option>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Did you make any sports before?</legend>
+                    <input id="radio-yes" type="radio" value="Yes" class="input-radio" name="experience">
+                    <label for="radio-yes">Yes</label>
+                    <br>
+                    <input id="radio-no" type="radio" value="No" class="input-radio" name="experience">
+                    <label for="radio-no">No</label>
+                </fieldset>
+
+                <div>
+                    <p>What is your goal about doing sports?</p>
+                    <label>
+                        <input name="prefer" value="to be fit" type="checkbox" class="input-checkbox">
+                        to be fit
+                    </label>
+                    <br>
+                    <label>
+                        <input name="prefer" value="learn a new sport" type="checkbox" class="input-checkbox">
+                        learn a new sport
+                    </label>
+                    <br>
+                    <label>
+                        <input name="prefer" value="healthy lifestyle" type="checkbox" class="input-checkbox">
+                        healthy lifestyle
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <p>Do you have any health problem? If you have what are they?</p>
+                    <textarea id="health" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+                <button type="submit" id="submit" class="submit-button"> Submit </button>
+
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
